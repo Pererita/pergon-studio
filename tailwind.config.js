@@ -8,6 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        
+        pergonBlueDark: '#00348e',
+        pergonBlue: '#0097cb',
+
         gray: {
           100: '#FBFBFB',
           200: '#EAEAEA',

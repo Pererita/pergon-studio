@@ -6,6 +6,7 @@ export default function Banner() {
 
   const [bannerOpen, setBannerOpen] = useState<boolean>(true)
 
+  // Panel inferior estilo modal
   return (
     <>
       {bannerOpen && (
