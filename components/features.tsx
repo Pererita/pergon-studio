@@ -24,15 +24,17 @@ export default function Features() {
     <section className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      <div className='absolute w-screen h-screen'>
+        <svg id="visual" viewBox="0 0 900 600" version="1.1"><rect x="0" y="0" fill="#eeeeee"></rect><defs><linearGradient id="grad1_0" x1="33.3%" y1="0%" x2="100%" y2="100%"><stop offset="20%" stop-color="#ffffff" stop-opacity="1"></stop><stop offset="80%" stop-color="#ffffff" stop-opacity="1"></stop></linearGradient></defs><defs><linearGradient id="grad1_1" x1="33.3%" y1="0%" x2="100%" y2="100%"><stop offset="20%" stop-color="#ffffff" stop-opacity="1"></stop><stop offset="80%" stop-color="#eeeeee" stop-opacity="1"></stop></linearGradient></defs><defs><linearGradient id="grad2_0" x1="0%" y1="0%" x2="66.7%" y2="100%"><stop offset="20%" stop-color="#ffffff" stop-opacity="1"></stop><stop offset="80%" stop-color="#ffffff" stop-opacity="1"></stop></linearGradient></defs><defs><linearGradient id="grad2_1" x1="0%" y1="0%" x2="66.7%" y2="100%"><stop offset="20%" stop-color="#eeeeee" stop-opacity="1"></stop><stop offset="80%" stop-color="#ffffff" stop-opacity="1"></stop></linearGradient></defs><g transform="translate(900, 0)"><path d="M0 486.7C-78.6 463.6 -157.2 440.4 -232.5 402.7C-307.8 365 -379.7 312.9 -421.5 243.4C-463.4 173.8 -475.1 86.9 -486.7 0L0 0Z" fill="#f6f6f6"></path><path d="M0 243.4C-39.3 231.8 -78.6 220.2 -116.2 201.4C-153.9 182.5 -189.9 156.5 -210.8 121.7C-231.7 86.9 -237.5 43.5 -243.4 0L0 0Z" fill="#ffffff"></path></g><g transform="translate(0, 600)"><path d="M0 -486.7C91.8 -477.9 183.5 -469 243.4 -421.5C303.2 -374.1 331.1 -288.2 366.3 -211.5C401.6 -134.8 444.2 -67.4 486.7 0L0 0Z" fill="#f6f6f6"></path><path d="M0 -243.4C45.9 -238.9 91.8 -234.5 121.7 -210.8C151.6 -187.1 165.5 -144.1 183.2 -105.8C200.8 -67.4 222.1 -33.7 243.4 0L0 0Z" fill="#ffffff"></path></g></svg>
+      </div>
+      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gradient-to-b from-pergonBlueDark to-pergonBlue transform -translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions</h1>
+            <h1 className="h2 mb-4">Explore the solutions </h1>
             <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
           </div>
 
@@ -48,7 +50,7 @@ export default function Features() {
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-[white] shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
