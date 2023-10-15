@@ -11,8 +11,8 @@ export default function FeaturesBlocks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Explore the solutions</h2>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <h2 className="h2 mb-4">Servicios</h2>
+            <p className="text-xl text-gray-600">Ofrecemos distintos servicios para las personas más exigentes, desde una simple página web hasta e-commerce, blog o sistemas.</p>
           </div>
 
           {/* Items */}
@@ -31,8 +31,8 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Páginas web</h4>
+              <p className="text-gray-600 text-center">Desde una simple página web informativa hasta una web interactiva y funcional, podemos desarrollar la web que mejor se adapte a tus necesidades.</p>
             </div>
 
             {/* 2nd item */}
@@ -47,8 +47,8 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Comercio electrónico</h4>
+              <p className="text-gray-600 text-center">Creamos tiendas online para que puedas vender tus productos o servicios de forma sencilla y eficaz.</p>
             </div>
 
             {/* 3rd item */}
@@ -64,8 +64,8 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Blogs</h4>
+              <p className="text-gray-600 text-center">Te ayudamos a crear un blog profesional para que puedas compartir tus ideas y conectar con tu audiencia.</p>
             </div>
 
             {/* 4th item */}
@@ -81,8 +81,8 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Sistemas de gestión</h4>
+              <p className="text-gray-600 text-center">Desarrollamos sistemas personalizados para satisfacer tus necesidades específicas.</p>
             </div>
 
             {/* 5th item */}
@@ -97,8 +97,8 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Soporte técnico</h4>
+              <p className="text-gray-600 text-center">Ofrecemos soporte técnico y mantenimiento para que tu web o sistema esté siempre al día y en funcionamiento.</p>
             </div>
 
             {/* 6th item */}
@@ -112,8 +112,8 @@ export default function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Diseños personalizados</h4>
+              <p className="text-gray-600 text-center">Ofrecemos diseños personalizados para que tu web o sistema sea único y se adapte a tu marca.</p>
             </div>
 
           </div>

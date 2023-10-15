@@ -3,8 +3,10 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import FeaturesBg from '@/public/images/features-bg.png'
-import FeaturesElement from '@/public/images/features-element.png'
+import CaracasExchange from '@/public/images/caracas-exchange.png'
+import CasinoOnline from '@/public/images/casino-online.png'
+import CreativeSolutions from '@/public/images/creative-solutions.png'
+// import FeaturesElement from '@/public/images/features-element.png'
 
 export default function Features() {
   
@@ -34,8 +36,8 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions </h1>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <h1 className="h2 mb-4">Sobre Nosotros </h1>
+            <p className="text-xl text-gray-600">Somos una empresa dedicada al diseño y desarrollo de páginas web totalmente personalizadas a las exigencias de cada cliente, a su vez, este puede elegir entre las plantillas ya prediseñadas por el equipo.</p>
           </div>
 
           {/* Section content */}
@@ -44,8 +46,8 @@ export default function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                <h3 className="h3 mb-3">Trabajos realizados</h3>
+                <p className="text-xl text-gray-600">A continuación se muestran los ultimos trabajos realizados por el equipo de diseño y desarrollo.</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -55,8 +57,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Caracas Exchange</div>
+                    <div className="text-gray-600">Landing Page completamente adaptada a las preferencias del cliente, con el propósito de infundir confianza en su casa de intercambio.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -70,8 +72,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Creative Solitions</div>
+                    <div className="text-gray-600">Desarrolo de una Landing Page creada para satisfacer las necesidades del cliente, con el fin de generar confianza en su agencia de marketing digital.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -85,8 +87,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Casino 365</div>
+                    <div className="text-gray-600">Desarrollo de una Landing Page completamente personalizada según las preferencias del cliente, con el objetivo de generar confianza en su casino.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -115,10 +117,14 @@ export default function Features() {
                     beforeEnter={() => heightFix()}
                     unmount={false}                     
                   >
-                    <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                    <div className="relative inline-flex flex-col m-auto">
+                      <Image className="md:max-w-none mx-auto rounded" src={CaracasExchange} width={500} height="462" alt="Casa de intercambio, página hecha por Pergon Studio" />
+                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
+                      <div className='flex justify-center'>
+                        <a href="" className='btn transition duration-1000  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0'>Demo</a>
+                      </div>
                     </div>
+                    
                   </Transition>
                   {/* Item 2 */}
                   <Transition
@@ -135,8 +141,11 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                      <Image className="md:max-w-none mx-auto rounded" src={CreativeSolutions} width={500} height="462" alt="Agencia de Marketing Digital, página hecha por Pergon Studio" />
+                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
+                      <div className='flex justify-center'>
+                        <a href="" className='btn transition duration-1000  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0'>Demo</a>
+                      </div>
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -154,8 +163,11 @@ export default function Features() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                      <Image className="md:max-w-none mx-auto rounded" src={CasinoOnline} width={500} height="462" alt="Casino en línea, página hecha por Pergon Studio" />
+                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
+                      <div className='flex justify-center'>
+                        <a href="" className='btn transition duration-1000  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0'>Demo</a>
+                      </div>
                     </div>
                   </Transition>
                 </div>

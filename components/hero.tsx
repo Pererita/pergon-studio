@@ -38,7 +38,7 @@ export default function Hero() {
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">En Pergon Studio, somos apasionados por transformar ideas en experiencias digitales impactantes. Nuestro equipo de expertos en diseño y desarrollo trabaja mano a mano contigo para crear soluciones web totalmente personalizadas que se ajusten a tus necesidades específicas.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <Link href="/" className='btn transition duration-1000  text-white bg-pergonBlue hover:bg-pergonBlueDark w-full mb-4 sm:w-auto sm:mb-0'>¡Empecemos!</Link>
+                <Link href="/" className='btn transition duration-1000  text-white bg-pergonBlue hover:bg-pergonBlueDark w-full transform animate-float mb-4 sm:w-auto sm:mb-0'>¡Empecemos!</Link>
               </div>
             </div>
           </div>
