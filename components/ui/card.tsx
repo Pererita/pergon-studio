@@ -1,13 +1,21 @@
-export default function Card() {
+interface CardProps {
+  title: string;
+  description: string;
+  price: string;
+}
+
+export default function Card({ title, description, price }: CardProps) {
   return (
-    <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+     <div className="w-full max-w-sm p-4 m-2 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
       <h5 className="mb-2 text-xl font-semibold text-pergonBlueDark text-center">
-        Básico
+        {title}
       </h5>
-      <p className="font-normal text-gray-500 text-center mb-2">Perfecto para algo sencillo pero útil</p>
+      <p className="font-normal text-gray-500 text-center mb-2">
+        {description}
+      </p>
       <div className="flex items-baseline text-pergonBlue justify-center">
         <span className="text-3xl font-semibold">$</span>
-        <span className="text-5xl font-extrabold tracking-tight">200</span>
+        <span className="text-5xl font-extrabold tracking-tight">{price}</span>
       </div>
       <ul role="list" className="space-y-5 my-7">
         <li className="flex space-x-3 items-center">
