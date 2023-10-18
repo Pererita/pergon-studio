@@ -17,7 +17,7 @@ export default function Nosotros() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center">
+          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4 items-start md:max-w-2xl lg:max-w-none" data-aos="zoom-y-out">
             <Card
               title="Plan Básico"
               description="Perfecto para algo sencillo pero útil"
