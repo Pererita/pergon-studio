@@ -96,11 +96,10 @@ export default function Newsletter() {
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
                 <h3 className="h3 text-white mb-2">
-                  Want more tutorials & guides?
+                  ¿Requieres información más detallada sobre nuestros servicios?
                 </h3>
                 <p className="text-gray-300 text-lg mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit nemo
-                  expedita voluptas culpa sapiente.
+                  Solo debes de ingresar tu correo y automaticamente recibiras un PDF con la información de nuestros sericios de manera detallada
                 </p>
 
                 {/* CTA form */}
@@ -109,20 +108,20 @@ export default function Newsletter() {
                     <input
                       type="email"
                       className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
-                      placeholder="Your email…"
-                      aria-label="Your email…"
+                      placeholder="Correo electrónico"
+                      aria-label="Correo electrónico"
                     />
                     <a
-                      className="btn text-white bg-blue-600 hover:bg-blue-700 shadow"
+                      className="btn transition duration-500 text-white bg-pergonBlueDark hover:bg-pergonBlue w-full transform animate-float mb-4 sm:w-auto sm:mb-0"
                       href="#0"
                     >
-                      Subscribe
+                      Enviar
                     </a>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
                   <p className="text-sm text-gray-400 mt-3">
-                    No spam. You can unsubscribe at any time.
+                    0 spam. De igual manera, siempre prodrás darte de baja.
                   </p>
                 </form>
               </div>

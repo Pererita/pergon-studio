@@ -32,7 +32,7 @@ export default function Features() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Sobre Nosotros </h1>
+            <h1 className="h2 mb-4">Sobre Nosotros</h1>
             <p className="text-xl text-gray-600">
               Somos una empresa dedicada al diseño y desarrollo de páginas web
               totalmente personalizadas a las exigencias de cada cliente, a su
@@ -202,7 +202,7 @@ export default function Features() {
                       <div className="flex justify-center">
                         <a
                           href=""
-                          className="btn transition duration-1000  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
+                          className="btn transition duration-500  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
                         >
                           Demo
                         </a>
@@ -235,7 +235,7 @@ export default function Features() {
                       <div className="flex justify-center">
                         <a
                           href=""
-                          className="btn transition duration-1000  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
+                          className="btn transition duration-500  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
                         >
                           Demo
                         </a>
@@ -268,7 +268,7 @@ export default function Features() {
                       <div className="flex justify-center">
                         <a
                           href=""
-                          className="btn transition duration-1000  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
+                          className="btn transition duration-500  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
                         >
                           Demo
                         </a>

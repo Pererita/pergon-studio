@@ -12,7 +12,8 @@ export default function FeaturesBlocks() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4 pt-6">Servicios</h2>
+            <h2 className="h2">Servicios</h2>
+            <div className="w-24 h-[2px] bg-gradient-to-r m-auto from-pergonBlueDark to-pergonBlue mb-4"></div>
             <p className="text-xl text-gray-600">
               Ofrecemos distintos servicios para las personas más exigentes,
               desde una simple página web hasta e-commerce, blog o sistemas.
