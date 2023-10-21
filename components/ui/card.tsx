@@ -2,9 +2,15 @@ interface CardProps {
   title: string;
   description: string;
   price: string;
+  svgColor: string;
+  svgColorTwo: string;
+  svgColorThree: string;
+  spanClass: string;
+  spanClassTwo: string;
+  spanClassThree: string;
 }
 
-export default function Card({ title, description, price }: CardProps) {
+export default function Card({ title, description, price, svgColor, svgColorTwo, svgColorThree, spanClass, spanClassTwo, spanClassThree }: CardProps) {
   return (
     <div className="w-full max-w-sm p-4 m-2 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
       <h5 className="mb-2 text-xl font-semibold text-pergonBlueDark text-center">
@@ -74,9 +80,9 @@ export default function Card({ title, description, price }: CardProps) {
             Selección de plantillas prediseñadas
           </span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className={`flex space-x-3 decoration-gray-500 ${spanClass === "gray" ? '' : 'line-through'}`}>
           <svg
-            className="flex-shrink-0 w-4 h-4 text-gray-400"
+            className={`flex-shrink-0 w-4 h-4 ${svgColor === "blue" ? 'text-pergonBlue' : 'text-gray-400'}`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -88,9 +94,9 @@ export default function Card({ title, description, price }: CardProps) {
             Animaciones
           </span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className={`flex space-x-3 decoration-gray-500 ${spanClass === "gray" ? '' : 'line-through'}`}>
           <svg
-            className="flex-shrink-0 w-4 h-4 text-gray-400"
+            className={`flex-shrink-0 w-4 h-4 ${svgColor === "blue" ? 'text-pergonBlue' : 'text-gray-400'}`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -102,9 +108,9 @@ export default function Card({ title, description, price }: CardProps) {
             SEO y posicionamiento web
           </span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className={`flex space-x-3 decoration-gray-500 ${spanClass === "gray" ? '' : 'line-through'}`}>
           <svg
-            className="flex-shrink-0 w-4 h-4 text-gray-400"
+            className={`flex-shrink-0 w-4 h-4 ${svgColor === "blue" ? 'text-pergonBlue' : 'text-gray-400'}`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -116,9 +122,9 @@ export default function Card({ title, description, price }: CardProps) {
             Tema claro y oscuro
           </span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className={`flex space-x-3 decoration-gray-500 ${spanClassTwo === "gray" ? '' : 'line-through'}`}>
           <svg
-            className="flex-shrink-0 w-4 h-4 text-gray-400"
+            className={`flex-shrink-0 w-4 h-4 ${svgColorTwo === "blue" ? 'text-pergonBlue' : 'text-gray-400'}`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -130,9 +136,9 @@ export default function Card({ title, description, price }: CardProps) {
             Diseño de logos e imágenes
           </span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className={`flex space-x-3 decoration-gray-500 ${spanClassTwo === "gray" ? '' : 'line-through'}`}>
           <svg
-            className="flex-shrink-0 w-4 h-4 text-gray-400"
+            className={`flex-shrink-0 w-4 h-4 ${svgColorTwo === "blue" ? 'text-pergonBlue' : 'text-gray-400'}`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -142,6 +148,48 @@ export default function Card({ title, description, price }: CardProps) {
           </svg>
           <span className="text-base font-normal leading-tight text-gray-500">
             Diseño de seis post para redes sociales
+          </span>
+        </li>
+        <li className={`flex space-x-3 decoration-gray-500 ${spanClassThree === "gray" ? '' : 'line-through'}`}>
+          <svg
+            className={`flex-shrink-0 w-4 h-4 ${svgColorThree === "blue" ? 'text-pergonBlue' : 'text-gray-400'}`}
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+          </svg>
+          <span className="text-base font-normal leading-tight text-gray-500">
+            E-commerce
+          </span>
+        </li>
+        <li className={`flex space-x-3 decoration-gray-500 ${spanClassThree === "gray" ? '' : 'line-through'}`}>
+          <svg
+            className={`flex-shrink-0 w-4 h-4 ${svgColorThree === "blue" ? 'text-pergonBlue' : 'text-gray-400'}`}
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+          </svg>
+          <span className="text-base font-normal leading-tight text-gray-500">
+            Sistemas de Gestión
+          </span>
+        </li>
+        <li className={`flex space-x-3 decoration-gray-500 ${spanClassThree === "gray" ? '' : 'line-through'}`}>
+          <svg
+            className={`flex-shrink-0 w-4 h-4 ${svgColorThree === "blue" ? 'text-pergonBlue' : 'text-gray-400'}`}
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+          </svg>
+          <span className="text-base font-normal leading-tight text-gray-500">
+            Intranet
           </span>
         </li>
       </ul>

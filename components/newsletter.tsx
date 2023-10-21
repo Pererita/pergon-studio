@@ -96,7 +96,7 @@ export default function Newsletter() {
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
                 <h3 className="h3 text-white mb-2">
-                  ¿Requieres información más detallada sobre nuestros servicios?
+                  ¿Requieres información más detallada?
                 </h3>
                 <p className="text-gray-300 text-lg mb-6">
                   Solo debes de ingresar tu correo y automaticamente recibiras un PDF con la información de nuestros sericios de manera detallada

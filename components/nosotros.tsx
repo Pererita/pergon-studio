@@ -22,21 +22,45 @@ export default function Nosotros() {
               title="Plan Básico"
               description="Perfecto para algo sencillo pero útil"
               price="200"
+              svgColor=""
+              svgColorTwo=""
+              svgColorThree=""
+              spanClass=""
+              spanClassTwo=""
+              spanClassThree=""
             />
             <Card
               title="Intermedio"
               description="Perfecto para una web sencilla pero útil"
               price="300"
+              svgColor="blue"
+              svgColorTwo=""
+              svgColorThree=""
+              spanClass="gray"
+              spanClassTwo=""
+              spanClassThree=""
             />
             <Card
               title="Completo"
               description="Perfecto para una web sencilla pero útil"
               price="500"
+              svgColor="blue"
+              svgColorTwo="blue"
+              svgColorThree=""
+              spanClass="gray"
+              spanClassTwo="gray"
+              spanClassThree=""
             />
             <Card
               title="Personalizado"
               description="Perfecto para una web sencilla pero útil"
-              price="XXX"
+              price="900"
+              svgColor="blue"
+              svgColorTwo="blue"
+              svgColorThree="blue"
+              spanClass="gray"
+              spanClassTwo="gray"
+              spanClassThree="gray"
             />
           </div>
         </div>
