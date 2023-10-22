@@ -1,6 +1,6 @@
-export default function FeaturesBlocks() {
+export default function Servicios() {
   return (
-    <section id="about" className="relative">
+    <section id="servicios" className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
         className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-[#008fc74d] pointer-events-none"

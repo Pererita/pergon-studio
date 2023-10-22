@@ -39,7 +39,7 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/"
+                  href="/#inicio"
                   className="font-medium text-gray-600 hover:text-pergonBlueDark px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Inicio
@@ -47,7 +47,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/#nosotros"
                   className="font-medium text-gray-600 hover:text-pergonBlueDark px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Nosotros
@@ -55,7 +55,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/#servicios"
                   className="font-medium text-gray-600 hover:text-pergonBlueDark px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Servivios
@@ -63,7 +63,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/#planes"
                   className="font-medium text-gray-600 hover:text-pergonBlueDark px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Planes
@@ -71,7 +71,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/#contactanos"
                   className="font-medium text-gray-600 hover:text-pergonBlueDark px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Contáctanos

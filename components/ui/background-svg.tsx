@@ -1,7 +1,11 @@
-export default function BackgroundSvg () {
+interface BackgroundSvgProps {
+  height: string;
+}
+
+export default function BackgroundSvg ({ height }:BackgroundSvgProps) {
     return (
-        <div className="absolute w-screen h-screen">
-        <svg id="visual" viewBox="0 0 900 600" version="1.1">
+        <div className="absolute w-screen h-full">
+        <svg className={`mx-auto ${height === "full" ? 'h-full' : ''}`} id="visual" viewBox="0 0 900 600" version="1.1">
           <rect x="0" y="0" fill="#eeeeee"></rect>
           <defs>
             <linearGradient id="grad1_0" x1="33.3%" y1="0%" x2="100%" y2="100%">

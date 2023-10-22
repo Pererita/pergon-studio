@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Logo() {
   // Logo navbar
   return (
-    <Link href="/" className="block" aria-label="Pergon Studio">
+    <Link href="/#inicio" className="block" aria-label="Pergon Studio">
       <Image
         src="/images/logo.png"
         width={70}
