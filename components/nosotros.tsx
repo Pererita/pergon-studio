@@ -25,8 +25,7 @@ export default function Nosotros() {
   return (
     <section id="nosotros" className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <BackgroundSvg 
-      height="full"
+      <BackgroundSvg
       />
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gradient-to-b from-pergonBlueDark to-pergonBlue transform -translate-y-1/2"></div>
 

@@ -1,5 +1,4 @@
 import Card from "@/components/ui/card";
-import CircleSvg from "./ui/circle-svg";
 
 export default function Planes() {
   return (
