@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/input-email.tsx"
+    "components/input-email.tsx",
+    "./react-preloaders.d.ts"
   ],
   "exclude": ["node_modules"]
 }

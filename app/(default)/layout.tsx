@@ -1,36 +1,32 @@
-'use client'
+"use client";
 
-import { useEffect } from 'react'
+import { useEffect } from "react";
+import { Circle } from "react-preloaders";
 
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-import Footer from '@/components/footer'
+import Footer from "@/components/footer";
 
 export default function DefaultLayout({
   children,
 }: {
-  children: React.ReactNode
-}) {  
-
+  children: React.ReactNode;
+}) {
   useEffect(() => {
     AOS.init({
       once: true,
-      disable: 'phone',
+      disable: "phone",
       duration: 700,
-      easing: 'ease-out-cubic',
-    })
-  })
+      easing: "ease-out-cubic",
+    });
+  });
 
   return (
     <>
-      <main className="grow">
-
-        {children}
-
-      </main>
-
+      <Circle background="#fff" color="#00348e" />
+      <main className="grow">{children}</main>
       <Footer />
     </>
-  )
+  );
 }

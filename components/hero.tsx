@@ -21,6 +21,7 @@ export default function Hero() {
             <h1
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
+              data-aos-delay="1500"
             >
               Bienvenidos a{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-pergonBlueDark to-pergonBlue">
@@ -31,7 +32,7 @@ export default function Hero() {
               <p
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
-                data-aos-delay="150"
+                data-aos-delay="1600"
               >
                 En Pergon Studio, somos apasionados por transformar ideas en
                 experiencias digitales impactantes. Nuestro equipo de expertos
@@ -42,7 +43,7 @@ export default function Hero() {
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
                 data-aos="zoom-y-out"
-                data-aos-delay="300"
+                data-aos-delay="1700"
               >
                 <Link
                   href="/#nosotros"
@@ -53,12 +54,13 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center mt-6 animate-bounce" 
+            <div
+              className="flex items-center justify-center mt-6 animate-bounce"
               data-aos="zoom-y-out"
-              data-aos-delay="400">
+              data-aos-delay="1800"
+            >
               <IconSociales />
             </div>
-
           </div>
         </div>
       </div>
