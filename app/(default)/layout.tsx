@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { Circle } from "react-preloaders";
+// import { Circle } from "react-preloaders";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,7 +24,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <Circle background="#fff" color="#00348e" />
+      {/* <Circle background="#fff" color="#00348e" /> */}
       <main className="grow">{children}</main>
       <Footer />
     </>
