@@ -1,4 +1,4 @@
-import "app/css/additional-styles/AnimatedBackground.css";
+import "/app/css/additional-styles/AnimatedBackground.css";
 
 export default function AnimatedBackground() {
   return (
