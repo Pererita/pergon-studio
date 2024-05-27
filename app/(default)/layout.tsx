@@ -1,11 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
-// import { Circle } from "react-preloaders";
-
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import Footer from "@/components/footer";
 
 export default function DefaultLayout({
@@ -13,6 +10,8 @@ export default function DefaultLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     AOS.init({
       once: true,
@@ -20,13 +19,35 @@ export default function DefaultLayout({
       duration: 700,
       easing: "ease-out-cubic",
     });
-  });
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Ajusta el tiempo según sea necesario
+  }, []);
 
   return (
     <>
-      {/* <Circle background="#fff" color="#00348e" /> */}
-      <main className="grow">{children}</main>
-      <Footer />
+      {isLoading ? (
+        <div className="preloader" style={preloaderStyle}>
+          {/* Aquí puedes poner cualquier animación CSS o SVG que desees para tu preloader */}
+          Loading...
+        </div>
+      ) : (
+        <>
+          <main className="grow">{children}</main>
+          <Footer />
+        </>
+      )}
     </>
   );
 }
+
+const preloaderStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh",
+  background: "#fff",
+  color: "#00348e",
+  fontSize: "24px",
+};
