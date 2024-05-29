@@ -4,7 +4,7 @@ export default function IconSociales() {
       <li>
         <a
           href="#0"
-          className="flex justify-center items-center text-gray-600 hover:text-pergonBlue bg-white hover:bg-white-100 rounded-full shadow transition duration-500 ease-in-out"
+          className="flex justify-center items-center text-gray-600 hover:text-pergonBlue bg-white hover:bg-white-100 rounded-full shadow transition duration-300 ease-in-out"
           aria-label="Instagram"
         >
           <svg
@@ -21,7 +21,7 @@ export default function IconSociales() {
       <li className="ml-4">
         <a
           href="#0"
-          className="flex justify-center items-center text-gray-600 hover:text-pergonBlue bg-white hover:bg-white-100 rounded-full shadow transition duration-500 ease-in-out"
+          className="flex justify-center items-center text-gray-600 hover:text-pergonBlue bg-white hover:bg-white-100 rounded-full shadow transition duration-300 ease-in-out"
           aria-label="Github"
         >
           <svg
@@ -38,7 +38,7 @@ export default function IconSociales() {
       <li className="ml-4">
         <a
           href="#0"
-          className="flex justify-center items-center text-gray-600 hover:text-pergonBlue bg-white hover:bg-white-100 rounded-full shadow transition duration-500 ease-in-out"
+          className="flex justify-center items-center text-gray-600 hover:text-pergonBlue bg-white hover:bg-white-100 rounded-full shadow transition duration-300 ease-in-out"
           aria-label="WhatsApp"
         >
           <svg

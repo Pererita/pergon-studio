@@ -6,7 +6,6 @@ import Image from "next/image";
 import CaracasExchange from "@/public/images/caracas-exchange.png";
 import CasinoOnline from "@/public/images/casino-online.png";
 import CreativeSolutions from "@/public/images/creative-solutions.png";
-import BackgroundSvg from '@/components/ui/background-svg';
 
 export default function Nosotros() {
   const [tab, setTab] = useState<number>(1);
@@ -24,9 +23,6 @@ export default function Nosotros() {
 
   return (
     <section id="nosotros" className="relative">
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <BackgroundSvg
-      />
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gradient-to-b from-pergonBlueDark to-pergonBlue transform -translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -83,11 +79,21 @@ export default function Nosotros() {
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg
-                      className="w-3 h-3 fill-current"
-                      viewBox="0 0 12 12"
                       xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
                     >
-                      <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" />
+                      <path d="M13 18l6 -6" />
+                      <path d="M13 6l6 6" />
                     </svg>
                   </div>
                 </a>
@@ -115,15 +121,22 @@ export default function Nosotros() {
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg
-                      className="w-3 h-3 fill-current"
-                      viewBox="0 0 12 12"
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
                     >
-                      <path
-                        d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z"
-                        fillRule="nonzero"
-                      />
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" />
+                      <path d="M13 18l6 -6" />
+                      <path d="M13 6l6 6" />
                     </svg>
                   </div>
                 </a>
@@ -151,16 +164,22 @@ export default function Nosotros() {
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg
-                      className="w-3 h-3 fill-current"
-                      viewBox="0 0 12 12"
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
                     >
-                      <path
-                        d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z"
-                        fill="#191919"
-                        fillRule="nonzero"
-                      />
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12l14 0" />
+                      <path d="M13 18l6 -6" />
+                      <path d="M13 6l6 6" />
                     </svg>
                   </div>
                 </a>
@@ -168,8 +187,10 @@ export default function Nosotros() {
             </div>
 
             {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
-              data-aos="fade-top">
+            <div
+              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
+              data-aos="fade-top"
+            >
               <div className="transition-all">
                 <div
                   className="relative flex flex-col text-center lg:text-right"
@@ -198,14 +219,6 @@ export default function Nosotros() {
                         height="462"
                         alt="Casa de intercambio, página hecha por Pergon Studio"
                       />
-                      <div className="flex justify-center">
-                        <a
-                          href=""
-                          className="btn transition duration-500  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
-                        >
-                          Demo
-                        </a>
-                      </div>
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -230,15 +243,6 @@ export default function Nosotros() {
                         height="462"
                         alt="Agencia de Marketing Digital, página hecha por Pergon Studio"
                       />
-                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
-                      <div className="flex justify-center">
-                        <a
-                          href=""
-                          className="btn transition duration-500  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
-                        >
-                          Demo
-                        </a>
-                      </div>
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -263,15 +267,6 @@ export default function Nosotros() {
                         height="462"
                         alt="Casino en línea, página hecha por Pergon Studio"
                       />
-                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} /> */}
-                      <div className="flex justify-center">
-                        <a
-                          href=""
-                          className="btn transition duration-500  text-white bg-pergonBlue hover:bg-pergonBlueDark mt-4 transform animate-float sm:w-auto sm:mb-0"
-                        >
-                          Demo
-                        </a>
-                      </div>
                     </div>
                   </Transition>
                 </div>

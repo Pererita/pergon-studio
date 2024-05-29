@@ -17,7 +17,7 @@ export default function Hero() {
         {/* Hero content */}
         <div className="flex items-center h-screen pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
+          <div className="text-center">
             <h1
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
@@ -47,7 +47,7 @@ export default function Hero() {
               >
                 <Link
                   href="/#nosotros"
-                  className="btn transition duration-500 text-white bg-pergonBlue hover:bg-pergonBlueDark w-full transform animate-float mb-4 sm:w-auto sm:mb-0"
+                  className="btn transition duration-300 text-white bg-pergonBlue hover:bg-pergonBlueDark w-full transform animate-float mb-4 sm:w-auto sm:mb-0"
                 >
                   ¡Empecemos!
                 </Link>

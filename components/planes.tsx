@@ -63,7 +63,7 @@ export default function Planes() {
             <Card
               title="Personalizado"
               description="Perfecto para una web sencilla pero útil"
-              price="900"
+              price="---"
               svgColor="blue"
               svgColorTwo="blue"
               svgColorThree="blue"

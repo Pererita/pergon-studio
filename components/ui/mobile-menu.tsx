@@ -94,7 +94,7 @@ export default function MobileMenu() {
                 href="/"
                 className="flex font-medium w-full text-gray-600 hover:text-pergonBlueDark px-4 py-3 justify-center transition duration-150 ease-in-out"
               >
-                Servivios
+                Servicios
               </Link>
             </li>
             <li>

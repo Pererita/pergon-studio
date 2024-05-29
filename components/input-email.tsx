@@ -112,7 +112,7 @@ export default function InputEmail() {
                       aria-label="Correo electrónico"
                     />
                     <a
-                      className="btn transition duration-500 text-white bg-pergonBlueDark hover:bg-pergonBlue w-full transform animate-float mb-4 sm:w-auto sm:mb-0"
+                      className="btn transition duration-500 text-white bg-pergonBlue hover:bg-pergonBlueDark w-full transform animate-float mb-4 sm:w-auto sm:mb-0"
                       href="#0"
                     >
                       Enviar

@@ -30,11 +30,11 @@ export default function DefaultLayout({
       {isLoading ? (
         <div className="preloader" style={preloaderStyle}>
           {/* Aquí puedes poner cualquier animación CSS o SVG que desees para tu preloader */}
-          Loading...
+          SOY LA POLLA...
         </div>
       ) : (
         <>
-          <main className="grow">{children}</main>
+        <main className="grow">{children}</main>
           <Footer />
         </>
       )}

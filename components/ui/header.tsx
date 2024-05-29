@@ -58,7 +58,7 @@ export default function Header() {
                   href="/#servicios"
                   className="font-medium text-gray-600 hover:text-pergonBlueDark px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Servivios
+                  Servicios
                 </Link>
               </li>
               <li>

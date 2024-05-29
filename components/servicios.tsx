@@ -1,11 +1,9 @@
+import CuadriculaSvg from "./ui/cuadricula-svg";
+
 export default function Servicios() {
   return (
     <section id="servicios" className="relative">
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div
-        className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-[#008fc74d] pointer-events-none"
-        aria-hidden="true"
-      ></div>
+      <CuadriculaSvg />
       <div className="absolute z-10 left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gradient-to-b from-pergonBlue to-pergonBlueDark transform translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -23,253 +21,262 @@ export default function Servicios() {
           {/* Items */}
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
             {/* 1st item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl transform transition-transform duration-300 hover:-translate-y-2">
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-world-www w-16 h-16 p-1 -mt-1 mb-2 rounded-full"
               >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2">
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M34.514 35.429l2.057 2.285h8M20.571 26.286h5.715l2.057 2.285"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M20.571 37.714h5.715L36.57 26.286h8"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      strokeLinecap="square"
-                      d="M41.143 34.286l3.428 3.428-3.428 3.429"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      strokeLinecap="square"
-                      d="M41.143 29.714l3.428-3.428-3.428-3.429"
-                    />
-                  </g>
-                </g>
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  className="fill-current text-pergonBlue"
+                />
+                <path
+                  d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4"
+                  className="text-white"
+                />
+                <path
+                  d="M11.5 3a16.989 16.989 0 0 0 -1.826 4"
+                  className="text-white"
+                />
+                <path
+                  d="M12.5 3a16.989 16.989 0 0 1 1.828 4"
+                  className="text-white"
+                />
+                <path
+                  d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4"
+                  className="text-white"
+                />
+                <path
+                  d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4"
+                  className="text-white"
+                />
+                <path
+                  d="M12.5 21a16.989 16.989 0 0 0 1.828 -4"
+                  className="text-white"
+                />
+                <path d="M2 10l1 4l1.5 -4l1.5 4l1 -4" className="text-white" />
+                <path d="M17 10l1 4l1.5 -4l1.5 4l1 -4" className="text-white" />
+                <path
+                  d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4"
+                  className="text-white"
+                />
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Páginas web
+                Sitios Web Personalizados
               </h4>
               <p className="text-gray-600 text-center">
-                Desde una simple página web informativa hasta una web
-                interactiva y funcional, podemos desarrollar la web que mejor se
-                adapte a tus necesidades.
+                Creación de sitios web a medida, adaptados a las necesidades y
+                objetivos específicos del cliente, utilizando tecnologías
+                modernas y mejores prácticas de desarrollo.
               </p>
             </div>
 
             {/* 2nd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl transform transition-transform duration-300 hover:-translate-y-2">
               <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-app-window w-16 h-16 p-1 -mt-1 mb-2 rounded-full bg-pergonBlue"
               >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2" transform="translate(19.429 20.571)">
-                    <circle
-                      className="stroke-current text-white"
-                      strokeLinecap="square"
-                      cx="12.571"
-                      cy="12.571"
-                      r="1.143"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M19.153 23.267c3.59-2.213 5.99-6.169 5.99-10.696C25.143 5.63 19.514 0 12.57 0 5.63 0 0 5.629 0 12.571c0 4.527 2.4 8.483 5.99 10.696"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M16.161 18.406a6.848 6.848 0 003.268-5.835 6.857 6.857 0 00-6.858-6.857 6.857 6.857 0 00-6.857 6.857 6.848 6.848 0 003.268 5.835"
-                    />
-                  </g>
-                </g>
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  className="text-white"
+                />
+                <path
+                  d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+                  className="text-white"
+                />
+                <path d="M6 8h.01" className="text-white" />
+                <path d="M9 8h.01" className="text-white" />
               </svg>
+
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Comercio electrónico
+                Aplicaciones Web
               </h4>
               <p className="text-gray-600 text-center">
-                Creamos tiendas online para que puedas vender tus productos o
-                servicios de forma sencilla y eficaz.
+                Diseño y desarrollo de aplicaciones web interactivas y
+                funcionales que pueden incluir sistemas de gestión, plataformas
+                de comercio electrónico, y aplicaciones SaaS (Software as a
+                Service).
               </p>
             </div>
 
             {/* 3rd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl transform transition-transform duration-300 hover:-translate-y-2">
               <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-filters w-16 h-16 p-1 -mt-1 mb-2 rounded-full bg-pergonBlue"
               >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2">
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M34.743 29.714L36.57 32 27.43 43.429H24M24 20.571h3.429l1.828 2.286"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      strokeLinecap="square"
-                      d="M34.743 41.143l1.828 2.286H40M40 20.571h-3.429L27.43 32l1.828 2.286"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M36.571 32H40"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M24 32h3.429"
-                      strokeLinecap="square"
-                    />
-                  </g>
-                </g>
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  className="text-white"
+                />
+                <path
+                  d="M12 8m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0"
+                  className="text-white"
+                />
+                <path d="M8 11a5 5 0 1 0 3.998 1.997" className="text-white" />
+                <path
+                  d="M12.002 19.003a5 5 0 1 0 3.998 -8.003"
+                  className="text-white"
+                />
               </svg>
+
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Blogs
+                Diseño UX/UI
               </h4>
               <p className="text-gray-600 text-center">
-                Te ayudamos a crear un blog profesional para que puedas
-                compartir tus ideas y conectar con tu audiencia.
+                Servicios de diseño de experiencia de usuario (UX) e interfaz de
+                usuario (UI) para asegurar que los sitios web y aplicaciones
+                sean intuitivos, atractivos y fáciles de usar.
               </p>
             </div>
 
             {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl transform transition-transform duration-300 hover:-translate-y-2">
               <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-seo w-16 h-16 p-1 -mt-1 mb-2 rounded-full bg-pergonBlue"
               >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2">
-                    <path
-                      className="stroke-current text-white"
-                      d="M32 37.714A5.714 5.714 0 0037.714 32a5.714 5.714 0 005.715 5.714"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M32 37.714a5.714 5.714 0 015.714 5.715 5.714 5.714 0 015.715-5.715M20.571 26.286a5.714 5.714 0 005.715-5.715A5.714 5.714 0 0032 26.286"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M20.571 26.286A5.714 5.714 0 0126.286 32 5.714 5.714 0 0132 26.286"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572"
-                      strokeLinecap="square"
-                    />
-                  </g>
-                </g>
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  className="text-white"
+                />
+                <path
+                  d="M7 8h-3a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-3"
+                  className="text-white"
+                />
+                <path d="M14 16h-4v-8h4" className="text-white" />
+                <path d="M11 12h2" className="text-white" />
+                <path
+                  d="M17 8m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z"
+                  className="text-white"
+                />
               </svg>
+
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Sistemas de gestión
+                Optimización SEO
               </h4>
               <p className="text-gray-600 text-center">
-                Desarrollamos sistemas personalizados para satisfacer tus
-                necesidades específicas.
+                Servicios de optimización para motores de búsqueda (SEO) para
+                mejorar la visibilidad y el ranking de los sitios web en los
+                resultados de búsqueda, aumentando el tráfico orgánico.
               </p>
             </div>
 
             {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl transform transition-transform duration-300 hover:-translate-y-2">
               <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart w-16 h-16 p-1 -mt-1 mb-2 rounded-full bg-pergonBlue"
               >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2">
-                    <path
-                      className="stroke-current text-white"
-                      d="M19.429 32a12.571 12.571 0 0021.46 8.89L23.111 23.11A12.528 12.528 0 0019.429 32z"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M32 19.429c6.943 0 12.571 5.628 12.571 12.571M32 24a8 8 0 018 8"
-                    />
-                    <path
-                      className="stroke-current text-white"
-                      d="M34.286 29.714L32 32"
-                    />
-                  </g>
-                </g>
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  className="text-white"
+                />
+                <path
+                  d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"
+                  className="text-white"
+                />
+                <path
+                  d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"
+                  className="text-white"
+                />
+                <path d="M17 17h-11v-14h-2" className="text-white" />
+                <path d="M6 5l14 1l-1 7h-13" className="text-white" />
               </svg>
+
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Soporte técnico
+                Comercio Electrónico
               </h4>
               <p className="text-gray-600 text-center">
-                Ofrecemos soporte técnico y mantenimiento para que tu web o
-                sistema esté siempre al día y en funcionamiento.
+                Creación de tiendas en línea y plataformas de comercio
+                electrónico, incluyendo la integración de sistemas de pago,
+                gestión de inventario y funcionalidades de carrito de compras.
               </p>
             </div>
 
             {/* 6th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl transform transition-transform duration-300 hover:-translate-y-2">
               <svg
-                className="w-16 h-16 p-1 -mt-1 mb-2"
-                viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon icon-tabler icons-tabler-outline icon-tabler-api w-16 h-16 p-1 -mt-1 mb-2 rounded-full bg-pergonBlue"
               >
-                <g fill="none" fillRule="evenodd">
-                  <rect
-                    className="fill-current text-blue-600"
-                    width="64"
-                    height="64"
-                    rx="32"
-                  />
-                  <g strokeWidth="2" strokeLinecap="square">
-                    <path
-                      className="stroke-current text-white"
-                      d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775"
-                    />
-                    <path
-                      className="stroke-current text-blue-300"
-                      d="M44.571 43.429H34.286M44.571 37.714H34.286"
-                    />
-                  </g>
-                </g>
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                  className="text-white"
+                />
+                <path d="M4 13h5" className="stroke-current text-white" />
+                <path
+                  d="M12 16v-8h3a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-3"
+                  className="stroke-current text-white"
+                />
+                <path d="M20 8v8" className="stroke-current text-white" />
+                <path
+                  d="M9 16v-5.5a2.5 2.5 0 0 0 -5 0v5.5"
+                  className="stroke-current text-white"
+                />
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Diseños personalizados
+                Integración de APIs
               </h4>
               <p className="text-gray-600 text-center">
-                Ofrecemos diseños personalizados para que tu web o sistema sea
-                único y se adapte a tu marca.
+                Desarrollo e integración de APIs y servicios de terceros para
+                ampliar funcionalidades, como sistemas de pago, servicios de
+                envío, redes sociales y otras plataformas externas.
               </p>
             </div>
           </div>
