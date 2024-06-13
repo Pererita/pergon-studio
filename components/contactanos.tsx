@@ -5,9 +5,7 @@ export default function Contactanos() {
   return (
     <section id="contactanos" className="relative">
       {/* Illustration behind content */}
-      <BackgroundSvg 
-      height=""
-      />
+      <BackgroundSvg />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">

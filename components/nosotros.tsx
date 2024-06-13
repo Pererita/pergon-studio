@@ -23,7 +23,7 @@ export default function Nosotros() {
 
   return (
     <section id="nosotros" className="relative">
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gradient-to-b from-pergonBlueDark to-pergonBlue transform -translate-y-1/2"></div>
+      <div className="hidden md:block absolute left-0 right-0 m-auto w-px p-px h-20 bg-gradient-to-b from-pergonBlueDark to-pergonBlue transform -translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
@@ -63,7 +63,6 @@ export default function Nosotros() {
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
-                    console.log(tab);
                     setTab(1);
                   }}
                 >
@@ -106,7 +105,6 @@ export default function Nosotros() {
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
-                    console.log(tab);
                     setTab(2);
                   }}
                 >
@@ -149,7 +147,6 @@ export default function Nosotros() {
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
-                    console.log(tab);
                     setTab(3);
                   }}
                 >
